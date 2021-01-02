@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class FirstStage extends Stage {
 
-    FirstStage(Stage secondStage){
+    FirstStage(){
         Parent root = null;
         try {
             root = FXMLLoader.load(getClass().getResource("sample.fxml"));

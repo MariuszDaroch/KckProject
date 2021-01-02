@@ -8,8 +8,8 @@ import javafx.stage.Stage;
 public class Main extends Application{
 
     public void start(Stage primaryStage) throws Exception{
-       SecondStage secondStage= new SecondStage();
-       new FirstStage(secondStage);
+       new SecondStage();
+       new FirstStage();
 
     }
 
