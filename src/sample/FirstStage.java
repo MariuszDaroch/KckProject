@@ -16,7 +16,8 @@ public class FirstStage extends Stage {
         } catch (IOException e) {
             e.printStackTrace();
         }
-s        this.setScene(new Scene(root, 600, 600));
+        this.setTitle("ControlPanel");
+        this.setScene(new Scene(root, 600, 600));
         this.show();
     }
 
