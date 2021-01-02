@@ -8,8 +8,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 public class SecondStage extends Stage {
-    private static TurnOffAlarm tOffA;
-    private static TurnOnAlarm tOnA;
+    private static Alarm alarm;
     SecondStage(){
         Group sceneRoot = new Group();
         Scene scene = new Scene(sceneRoot, 600, 600, true, SceneAntialiasing.BALANCED);
@@ -25,17 +24,12 @@ public class SecondStage extends Stage {
         this.show();
     }
 
-    public static void setTOffA(TurnOffAlarm tOffA_val){
-        tOffA=tOffA_val;
+    public static void setAlarm(Alarm alarm_val){
+        alarm=alarm_val;
     }
-    public static TurnOffAlarm getTOffA(){
-        return SecondStage.tOffA;
+    public static Alarm getAlarm(){
+        return SecondStage.alarm;
     }
 
-    public static void setTOnA(TurnOnAlarm tOnA_val){
-        tOnA=tOnA_val;
-    }
-    public static TurnOnAlarm getTOnA(){
-        return SecondStage.tOnA;
-    }
+
 }
